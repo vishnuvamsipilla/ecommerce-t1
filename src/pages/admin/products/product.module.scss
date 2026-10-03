@@ -1,0 +1,341 @@
+$ink: #18222f;
+$muted: #768191;
+$line: #e7ebf0;
+$surface: #ffffff;
+$blue: #3d75d6;
+
+.productContent {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 38px 42px 30px;
+  color: $ink;
+  font-family: "Manrope", "Segoe UI", sans-serif;
+}
+.pageHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+.eyebrow {
+  margin-bottom: 8px;
+  color: #9aa4af;
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.pageHeader h1 {
+  font-size: 31px;
+  letter-spacing: -1.3px;
+  line-height: 1.15;
+}
+.pageHeader p {
+  margin-top: 8px;
+  color: $muted;
+  font-size: 12px;
+}
+.createButton,
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 38px;
+  padding: 0 14px;
+  border: 1px solid #dbe2eb;
+  border-radius: 6px;
+  background: $surface;
+  color: #526174;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+.createButton {
+  border-color: $blue;
+  background: $blue;
+  color: white;
+}
+.createButton:hover {
+  background: #2e63bd;
+}
+.createButton .icon {
+  width: 15px;
+  height: 15px;
+}
+.backButton:hover {
+  border-color: #a7c5ee;
+  color: $blue;
+}
+.notice {
+  margin-bottom: 16px;
+  padding: 11px 14px;
+  border: 1px solid;
+  border-radius: 6px;
+  font-size: 11px;
+}
+.error {
+  border-color: #f0c1bd;
+  background: #fff5f4;
+  color: #b34c43;
+}
+.tableCard,
+.formCard {
+  border: 1px solid $line;
+  border-radius: 8px;
+  background: $surface;
+  box-shadow: 0 4px 12px rgba(31, 51, 73, 0.025);
+  padding: 22px;
+}
+.tableHeading,
+.cardHeading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+.tableHeading h2,
+.cardHeading h2 {
+  font-size: 14px;
+}
+.tableHeading p,
+.cardHeading p {
+  margin-top: 5px;
+  color: #9aa4af;
+  font-size: 10px;
+}
+.activeLabel {
+  border-radius: 20px;
+  background: #e8f8f0;
+  color: #269a70;
+  font-family: "DM Mono", monospace;
+  font-size: 9px;
+  padding: 6px 9px;
+  text-transform: uppercase;
+}
+.tableWrap {
+  overflow-x: auto;
+}
+.productTable {
+  width: 100%;
+  border-collapse: collapse;
+  color: #76818d;
+  font-size: 10px;
+  text-align: left;
+}
+.productTable th {
+  padding: 0 12px 11px;
+  color: #9aa4af;
+  font-family: "DM Mono", monospace;
+  font-size: 9px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+.productTable td {
+  padding: 13px 12px;
+  border-top: 1px solid #eef1f4;
+  white-space: nowrap;
+}
+.productIdentity {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #344251;
+}
+.productIdentity strong,
+.productIdentity small {
+  display: block;
+}
+.productIdentity strong {
+  font-weight: 700;
+}
+.productIdentity small {
+  margin-top: 3px;
+  color: #9aa4af;
+  font-family: "DM Mono", monospace;
+  font-size: 8px;
+}
+.productMark {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 7px;
+  background: #edf4ff;
+  color: #4c7dd0;
+  font-weight: 800;
+}
+.categoryTag {
+  border-radius: 12px;
+  background: #f1efff;
+  color: #7564d8;
+  font-size: 9px;
+  padding: 4px 7px;
+}
+.statusTag {
+  border-radius: 12px;
+  background: #e8f8f0;
+  color: #269a70;
+  font-size: 9px;
+  padding: 4px 7px;
+  text-transform: capitalize;
+}
+.inactive {
+  background: #f2f3f5;
+  color: #7d8792;
+}
+.editButton,
+.deleteButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 700;
+}
+.editButton {
+  color: $blue;
+}
+.editButton:hover {
+  color: #2e63bd;
+}
+.deleteButton {
+  margin-left: 10px;
+  color: #bd574d;
+}
+.deleteButton:hover {
+  color: #963d35;
+}
+.deleteButton:disabled {
+  cursor: wait;
+  opacity: 0.55;
+}
+.editButton .icon,
+.deleteButton .icon {
+  width: 13px;
+  height: 13px;
+}
+.headingIcon {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 7px;
+  background: #edf4ff;
+  color: $blue;
+  font-size: 18px;
+}
+.productForm {
+  display: grid;
+  gap: 8px;
+}
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.productForm label {
+  margin-top: 8px;
+  color: #455363;
+  font-size: 11px;
+  font-weight: 700;
+}
+.productForm label span {
+  margin-left: 5px;
+  color: #a1aab4;
+  font-size: 9px;
+  font-weight: 400;
+}
+.productForm input,
+.productForm select,
+.productForm textarea {
+  width: 100%;
+  border: 1px solid #dfe5eb;
+  border-radius: 5px;
+  background: #fbfcfd;
+  color: $ink;
+  outline: 0;
+  padding: 10px 11px;
+  font-size: 11px;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+.productForm select {
+  cursor: pointer;
+}
+.productForm textarea {
+  resize: vertical;
+}
+.productForm input:focus,
+.productForm select:focus,
+.productForm textarea:focus {
+  border-color: #8fb3e9;
+  box-shadow: 0 0 0 3px #edf4ff;
+}
+.productForm input::placeholder,
+.productForm textarea::placeholder {
+  color: #adb6bf;
+}
+.fieldError {
+  color: #bd574d;
+  font-size: 9px;
+}
+.submitButton {
+  height: 39px;
+  margin-top: 17px;
+  border: 0;
+  border-radius: 5px;
+  background: $blue;
+  color: white;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+.submitButton:hover {
+  background: #2e63bd;
+}
+.submitButton:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+.emptyState {
+  padding: 45px 10px;
+  color: #9aa4af;
+  font-size: 11px;
+  text-align: center;
+}
+
+@media (max-width: 1050px) {
+  .productContent {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+}
+@media (max-width: 760px) {
+  .productContent {
+    padding: 28px 17px 20px;
+  }
+  .pageHeader {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .createButton,
+  .backButton {
+    width: 100%;
+    justify-content: center;
+  }
+  .tableCard,
+  .formCard {
+    padding: 17px 15px;
+  }
+  .formGrid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
